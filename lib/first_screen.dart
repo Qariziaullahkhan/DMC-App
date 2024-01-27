@@ -43,7 +43,7 @@ class _FirstScreenState extends State<FirstScreen> {
                     ),
                   ),
                   validator: (String? text) {
-                    if (text == null || text.isEmpty) {
+                    if (text == null || text.isEmpty || text.length > 3) {
                       return "Please Provide the English Marks";
                     }
                     eng = int.parse(text);
@@ -60,7 +60,7 @@ class _FirstScreenState extends State<FirstScreen> {
                     ),
                   ),
                   validator: (String? text) {
-                    if (text == null || text.isEmpty) {
+                    if (text == null || text.isEmpty || text.length > 3) {
                       return "Please Provide the Urdu Marks";
                     }
                     urdu = int.parse(text);
@@ -77,7 +77,7 @@ class _FirstScreenState extends State<FirstScreen> {
                     ),
                   ),
                   validator: (String? text) {
-                    if (text == null || text.isEmpty) {
+                    if (text == null || text.isEmpty || text.length > 3) {
                       return "Please Provide the Islamiat Marks";
                     }
                     isl = int.parse(text);
@@ -93,7 +93,7 @@ class _FirstScreenState extends State<FirstScreen> {
                         borderRadius: BorderRadius.circular(15),
                       )),
                   validator: (String? text) {
-                    if (text == null || text.isEmpty) {
+                    if (text == null || text.isEmpty || text.length > 3) {
                       return "Please Provide the Maths Marks";
                     }
                     Maths = int.parse(text);
@@ -109,7 +109,7 @@ class _FirstScreenState extends State<FirstScreen> {
                         borderRadius: BorderRadius.circular(15),
                       )),
                   validator: (String? text) {
-                    if (text == null || text.isEmpty) {
+                    if (text == null || text.isEmpty || text.length > 3) {
                       return "Please Provide the Pak Study  Marks";
                     }
                     Pak = int.parse(text);
@@ -125,7 +125,7 @@ class _FirstScreenState extends State<FirstScreen> {
                         borderRadius: BorderRadius.circular(15),
                       )),
                   validator: (String? text) {
-                    if (text == null || text.isEmpty) {
+                    if (text == null || text.isEmpty || text.length > 3) {
                       return "Please Provide the Computer Science Marks";
                     }
                     com = int.parse(text);
